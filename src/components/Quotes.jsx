@@ -1,5 +1,3 @@
-// import { useRef, useState } from "react";
-
 import { useAnswers } from "../hooks/useAnswers"
 
 export const Quotes = ({ data }) => {
