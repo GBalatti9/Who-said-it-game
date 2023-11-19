@@ -1,7 +1,6 @@
 import { useState } from "react"
 
-export const useFetch = () => {
-
+export const useApi = () => {
     const [state, setState] = useState({
         data: null,
         isLoading: true,
@@ -29,16 +28,9 @@ export const useFetch = () => {
 
     }    
     
-    const gameDifficulty = (num) => {
-        const url = `https://api.breakingbadquotes.xyz/v1/quotes/${num}`;
-        getApi(url);
-    }
-
-
-    return {
+    return{
         data: state.data,
         isLoading: state.isLoading,
-        gameDifficulty,
+        getApi,
     }
-
 }
