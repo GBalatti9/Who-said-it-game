@@ -1,7 +1,7 @@
 
 
 export const Quotes = ({ data }) => {
-    console.log("FROM QUOTES: ", { data });
+    
     return (
         <form action="">
             {
