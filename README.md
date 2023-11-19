@@ -1,8 +1,4 @@
-# React + Vite
+# Who said it - game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a Game built with React. As I am studying I have found the useRef hook so I challenged myself to develop a little and funny game. The useRef hook was an excuse. I have use it to check if the answer in a specific input is correct or wrong. So please welcome and try my game. 
+PS: If you are a Breaking Bad fan you can test how much you know about the show...
