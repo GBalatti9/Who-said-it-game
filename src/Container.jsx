@@ -17,7 +17,10 @@ export const Container = () => {
             isLoading ?
             <Buttons info={ buttonInfo } fn={ gameDifficulty } />
             : data.map((p) => (
+                <>
                 <p>{p.quote}</p>
+                <input type="text" />
+                </>
             ))
         }
         </>
