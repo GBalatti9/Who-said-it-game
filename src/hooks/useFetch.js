@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export const useFetch = () => {
 
@@ -7,9 +7,7 @@ export const useFetch = () => {
         isLoading: true,
     })
 
-    const getApi = async () => {
-
-        const url = `https://api.breakingbadquotes.xyz/v1/quotes/`;
+    const getApi = async (url) => {
 
         setState({
             ...state,
@@ -29,19 +27,18 @@ export const useFetch = () => {
             console.log(error);
         }
 
-    }
-
-    useEffect(() => {
-        getApi();
-    }, []);
-
-    console.log(state);
+    }    
     
+    const gameDifficulty = (num) => {
+        const url = `https://api.breakingbadquotes.xyz/v1/quotes/${num}`;
+        getApi(url);
+    }
 
 
     return {
         data: state.data,
         isLoading: state.isLoading,
+        gameDifficulty,
     }
 
 }
