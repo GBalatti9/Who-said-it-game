@@ -1,3 +1,4 @@
+import { Buttons } from "./components/Buttons";
 import { useFetch } from "./helpers/setDifficulty";
 
 export const Container = () => {
@@ -13,8 +14,8 @@ export const Container = () => {
     return (
         <>
         {
-            isLoading ? 
-            <button onClick={() => gameDifficulty(5)}> Easy </button>
+            isLoading ?
+            <Buttons info={ buttonInfo } fn={ gameDifficulty } />
             : data.map((p) => (
                 <p>{p.quote}</p>
             ))
